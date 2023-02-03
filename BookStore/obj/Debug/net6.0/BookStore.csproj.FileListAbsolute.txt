@@ -25,3 +25,14 @@ C:\Users\Msi\Desktop\PatikaProjects\BookStore\BookStore\obj\Debug\net6.0\refint\
 C:\Users\Msi\Desktop\PatikaProjects\BookStore\BookStore\obj\Debug\net6.0\BookStore.pdb
 C:\Users\Msi\Desktop\PatikaProjects\BookStore\BookStore\obj\Debug\net6.0\BookStore.genruntimeconfig.cache
 C:\Users\Msi\Desktop\PatikaProjects\BookStore\BookStore\obj\Debug\net6.0\ref\BookStore.dll
+C:\Users\Msi\Desktop\PatikaProjects\BookStore\BookStore\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Msi\Desktop\PatikaProjects\BookStore\BookStore\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Msi\Desktop\PatikaProjects\BookStore\BookStore\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Msi\Desktop\PatikaProjects\BookStore\BookStore\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Msi\Desktop\PatikaProjects\BookStore\BookStore\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Msi\Desktop\PatikaProjects\BookStore\BookStore\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Msi\Desktop\PatikaProjects\BookStore\BookStore\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Msi\Desktop\PatikaProjects\BookStore\BookStore\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Msi\Desktop\PatikaProjects\BookStore\BookStore\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Msi\Desktop\PatikaProjects\BookStore\BookStore\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Msi\Desktop\PatikaProjects\BookStore\BookStore\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
