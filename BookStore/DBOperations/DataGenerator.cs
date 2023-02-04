@@ -14,7 +14,7 @@ namespace BookStore.DBOperations
                 }
                 context.Books.AddRange(new Book
                 {
-                    Id = 1,
+                   // Id = 1,
                     GenreId = 1,
                     Title = "Lean Startup",//personal grownt
                     PageCount = 200,
@@ -22,7 +22,7 @@ namespace BookStore.DBOperations
                 },
               new Book
               {
-                  Id = 2,
+                  //Id = 2,
                   GenreId = 2,
                   Title = "Herland",//science fiction
                   PageCount = 250,
@@ -30,9 +30,9 @@ namespace BookStore.DBOperations
               },
                 new Book
                 {
-                    Id = 3,
+                    //Id = 3,
                     GenreId = 2,
-                    Title = "Herland",//science fiction
+                    Title = "Herland",//action
                     PageCount = 500,
                     PublishDate = new DateTime(2020, 06, 12),
                 });
