@@ -3,6 +3,7 @@ using BookStore.DBOperations;
 using Microsoft.EntityFrameworkCore;
 
 using Microsoft.OpenApi.Models;
+using System.Reflection;
 
 namespace BookStore
 {
@@ -23,7 +24,7 @@ namespace BookStore
             });
 
            
-           
+           services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddControllers();
             services.AddDbContext<BookStoreDbContext>(options => options.UseInMemoryDatabase(databaseName: "BookStoreDB"));
         }
