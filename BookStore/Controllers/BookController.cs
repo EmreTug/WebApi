@@ -5,6 +5,7 @@ using BookStore.BookOperations.GetBookDetail;
 using BookStore.BookOperations.GetBooks;
 using BookStore.BookOperations.UpdateBook;
 using BookStore.DBOperations;
+using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using static BookStore.BookOperations.CreateBook.CreateBookCommand;
 using static BookStore.BookOperations.GetBookDetail.GetBookDetailQuery;
@@ -41,6 +42,8 @@ namespace BookStore.Controllers
             try
             {
                 query.bookId = id;
+                GetBookDetailQueryValidator validator = new GetBookDetailQueryValidator();
+                validator.ValidateAndThrow(query);
                 result = query.Handle();
 
             }
@@ -58,7 +61,8 @@ namespace BookStore.Controllers
             try
             {
                 command.model = newBook;
-
+                CreateBookCommandValidator validator = new CreateBookCommandValidator();
+                validator.ValidateAndThrow(command);
                 command.Handle();
 
             }
@@ -76,6 +80,8 @@ namespace BookStore.Controllers
             {
                 command.bookId = id;
                 command.updateBok = updateBok;
+                UpdateBookCommandValidator validator = new UpdateBookCommandValidator();
+                validator.ValidateAndThrow(command);
                 command.Handle();
             }
             catch (Exception e)
@@ -93,6 +99,8 @@ namespace BookStore.Controllers
             try
             {
                 command.Id = id;
+                DeleteBookCommandValidator validation= new DeleteBookCommandValidator();
+                validation.ValidateAndThrow(command);
                 command.Handle();
             }
             catch (Exception e)
