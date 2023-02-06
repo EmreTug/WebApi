@@ -1,6 +1,6 @@
 ﻿using BookStore.DBOperations;
 
-namespace BookStore.BookOperations.UpdateBook
+namespace BookStore.Applications.BookOperations.Commands.UpdateBook
 {
     public class UpdateBookCommand
     {

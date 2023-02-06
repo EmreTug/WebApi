@@ -1,6 +1,6 @@
 ﻿using BookStore.DBOperations;
 
-namespace BookStore.BookOperations.DeleteBook
+namespace BookStore.Applications.BookOperations.Commands.DeleteBook
 {
     public class DeleteBookCommand
     {

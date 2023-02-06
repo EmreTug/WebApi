@@ -2,7 +2,7 @@
 using BookStore.Common;
 using BookStore.DBOperations;
 
-namespace BookStore.BookOperations.GetBooks
+namespace BookStore.Applications.BookOperations.Queries.GetBooks
 {
     public class GetBooksQuery
     {
