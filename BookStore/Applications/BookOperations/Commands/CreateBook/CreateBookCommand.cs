@@ -23,13 +23,19 @@ namespace BookStore.Applications.BookOperations.Commands.CreateBook
             _context.SaveChanges();
         }
 
-        public class CreateBookModel{
-            public String Title { get; set; }
+        public class CreateBookModel
+        {
+            public string Title { get; set; }
+
             public int GenreId { get; set; }
+
             public int PageCount { get; set; }
+
             public DateTime PublishDate { get; set; }
 
+            public int AuthorId { get; set; }
         }
+
 
     }
 }

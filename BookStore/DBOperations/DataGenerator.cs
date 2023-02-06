@@ -14,6 +14,11 @@ namespace BookStore.DBOperations
                     return;
                 }
                 context.Genres.AddRange(new Genre { Name="Personal Growth"},new Genre { Name="Sciene Fiction"},new Genre { Name="Romance"});
+                context.Authors.AddRange(
+                    new Author { DateOfBirth= new DateTime(2001, 06, 12) ,Name="AuthorName1",Surname="AuthorSurname1"},
+                    new Author { DateOfBirth= new DateTime(2001, 06, 11) ,Name="AuthorName2",Surname="AuthorSurname2"},
+                    new Author { DateOfBirth= new DateTime(2002, 06, 11) ,Name="AuthorName3",Surname="AuthorSurname3"}
+                    );
                 context.Books.AddRange(new Book
                 {
                    // Id = 1,

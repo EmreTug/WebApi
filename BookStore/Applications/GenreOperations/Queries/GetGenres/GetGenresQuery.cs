@@ -14,7 +14,7 @@ namespace BookStore.Applications.GenreOperations.Queries.GetGenres
         }
         public List<GenresViewModel> Handle()
         {
-            return _context.Genres.OrderBy(book => book.Id).ToList().Select(a => _mapper.Map<GenresViewModel>(a)).ToList();
+            return _context.Genres.OrderBy(genre => genre.Id).ToList().Select(a => _mapper.Map<GenresViewModel>(a)).ToList();
         }
 
         public class GenresViewModel
