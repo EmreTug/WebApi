@@ -7,9 +7,9 @@ namespace BookStore.Applications.BookOperations.Commands.CreateBook
     public class CreateBookCommand
     {
         public CreateBookModel model { get; set; }
-        private readonly BookStoreDbContext _context;
+        private readonly IBookStoreDbContext _context;
         private readonly IMapper _mapper;
-        public CreateBookCommand(BookStoreDbContext context,IMapper mapper)
+        public CreateBookCommand(IBookStoreDbContext context,IMapper mapper)
         {
             _context = context;
             _mapper = mapper;

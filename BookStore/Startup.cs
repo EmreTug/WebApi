@@ -27,6 +27,7 @@ namespace BookStore
            services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddControllers();
             services.AddDbContext<BookStoreDbContext>(options => options.UseInMemoryDatabase(databaseName: "BookStoreDB"));
+            services.AddScoped<IBookStoreDbContext>(provider=>provider.GetService<BookStoreDbContext>());  
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
