@@ -16,7 +16,7 @@ namespace BookStore.Applications.GenreOperations.Command.CreateGenre
         }
         public void Handle()
         {
-            var result = _context.Books.Any(a => a.Title == model.Name);
+            var result = _context.Genres.Any(a => a.Name == model.Name);
             if (result is true)
                 throw new InvalidOperationException("Genre kayıtlı");
             _context.Genres.Add(_mapper.Map<Genre>(model));
