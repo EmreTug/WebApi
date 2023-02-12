@@ -16,9 +16,9 @@ namespace BookStore.Applications.GenreOperations.Queries.GetGenreDetail
         }
         public GenreDetailViewModel Handle()
         {
-            var result = _context.Books.FirstOrDefault(book => book.Id == genreId);
+            var result = _context.Genres.FirstOrDefault(genre => genre.Id == genreId);
             if (result == null)
-                throw new InvalidOperationException("Genre");
+                throw new InvalidOperationException("Genre bulunamadı");
             return _mapper.Map<GenreDetailViewModel>(result);
         }
 

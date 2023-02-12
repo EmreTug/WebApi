@@ -16,9 +16,9 @@ namespace BookStore.Applications.AuthorOperations.Queries.GetAuthorDetail
         }
         public AuthorDetailViewModel Handle()
         {
-            var result = _context.Books.FirstOrDefault(author => author.Id == authorId);
+            var result = _context.Authors.FirstOrDefault(author => author.Id == authorId);
             if (result == null)
-                throw new InvalidOperationException("Author");
+                throw new InvalidOperationException("Author bulunamadı");
             return _mapper.Map<AuthorDetailViewModel>(result);
         }
 

@@ -19,7 +19,7 @@ namespace BookStore.Applications.BookOperations.Queries.GetBookDetail
         {
             var result = _context.Books.FirstOrDefault(book => book.Id == bookId);
             if (result == null)
-                throw new InvalidOperationException("Kitap Bulunamadı");
+                throw new InvalidOperationException("Kitap bulunamadı");
             return _mapper.Map<BookDetailViewModel>(result);
         }
 

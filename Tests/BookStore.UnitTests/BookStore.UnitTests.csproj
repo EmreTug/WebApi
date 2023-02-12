@@ -29,7 +29,6 @@
 
   <ItemGroup>
     <Folder Include="Applications\AuthorOperations\Queries\GetAuthors\" />
-    <Folder Include="Applications\AuthorOperations\Queries\GetAuthorDetail\" />
     <Folder Include="Applications\GenreOperations\Queries\GetGenres\" />
     <Folder Include="Applications\GenreOperations\Queries\GetGenreDetail\" />
   </ItemGroup>
